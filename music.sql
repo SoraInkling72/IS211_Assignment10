@@ -5,5 +5,3 @@ sqlite> CREATE TABLE song (id INTEGER PRIMARY KEY ASC, name TEXT, album TEXT, tr
 sqlite> CREATE TABLE song_length (song_track_no. INT, song_name TEXT, song_length(secs) INTEGER);
 sqlite> .tables
 music     song      song_length
-
-
