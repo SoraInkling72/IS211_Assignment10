@@ -7,13 +7,13 @@ CREATE TABLE person(
 
 CREATE TABLE pet(
     id INTEGER PRIMARY KEY,
-    nameTEXT,
-    breedTEXT,
-    ageINTEGER,
-    deadINTEGER
+    name TEXT,
+    breed TEXT,
+    age INTEGER,
+    dead INTEGER
 );
 
 CREATE TABLE person_pet(
-    person_idINTEGER,
-    pet_idINTEGER
+    person_id INTEGER,
+    pet_id INTEGER
 );
