@@ -13,6 +13,16 @@ def create_tables():
 
         cur.execute("DROP TABLE IF EXISTS pet;")
         cur.execute("CREATE TABLE pet(id INTEGER PRIMARY KEY, name TEXT, breed TEXT, age INTEGER, dead INTEGER)")
+        cur.execute("INSERT INTO pet VALUES(1,'Rusty','Dalmatian', 4, 1)")
+        cur.execute("INSERT INTO pet VALUES(2,'Bella','Alaskan Malamute', 3, 0)")
+        cur.execute("INSERT INTO pet VALUES(3,'Max','Cocker Spaniel', 1, 0)")
+        cur.execute("INSERT INTO pet VALUES(4,'Rocky','Beagle', 7, 0)")
+        cur.execute("INSERT INTO pet VALUES(5,'Rufus','Cocker Spaniel', 1, 0)")
+        cur.execute("INSERT INTO pet VALUES(6,'Spot','Bloodhound', 2, 1)")
+
+        cur.execute("DROP TABLE IF EXISTS person_pet;")
+        cur.execute("CREATE TABLE pet(person_id INTEGER, pet_id INTEGER)")
+
 
 
 
