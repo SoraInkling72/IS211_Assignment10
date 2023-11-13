@@ -21,9 +21,15 @@ def create_tables():
         cur.execute("INSERT INTO pet VALUES(6,'Spot','Bloodhound', 2, 1)")
 
         cur.execute("DROP TABLE IF EXISTS person_pet;")
-        cur.execute("CREATE TABLE pet(person_id INTEGER, pet_id INTEGER)")
-
-
+        cur.execute("CREATE TABLE person_pet(person_id INTEGER, pet_id INTEGER)")
+        cur.execute("SELECT id FROM person INSERT INTO person_id")
+        cur.execute("SELECT id FROM pet INSERT INTO pet_id")
+        cur.execute("INSERT INTO person_pet VALUES(1, 1)")
+        cur.execute("INSERT INTO person_pet VALUES(1, 2)")
+        cur.execute("INSERT INTO person_pet VALUES(2, 3)")
+        cur.execute("INSERT INTO person_pet VALUES(2, 4)")
+        cur.execute("INSERT INTO person_pet VALUES(3, 5)")
+        cur.execute("INSERT INTO person_pet VALUES(4, 6)")
 
 
 
